@@ -53,7 +53,7 @@ const colorMode = useColorMode();
 
 console.log(colorMode.preference);
 
-function setColorMode(mode) {
-  colorMode.preference = mode;
-}
+// function setColorMode(mode) {
+//   colorMode.preference = mode;
+// }
 </script>
