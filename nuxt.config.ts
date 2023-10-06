@@ -8,18 +8,18 @@ export default defineNuxtConfig({
   devServer: {
     port: 3010,
   },
-  modules: ['@nuxtjs/color-mode'],
-  colorMode: {
-    preference: 'system', // default value of $colorMode.preference
-    fallback: 'dark', // fallback value if not system preference found
-    hid: 'nuxt-color-mode-script',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ColorScheme',
-    dataValue: 'bs-theme',
-    classPrefix: '',
-    classSuffix: '',
-    storageKey: 'nuxt-color-mode',
-  },
+  // modules: ['@nuxtjs/color-mode'],
+  // colorMode: {
+  //   preference: 'system', // default value of $colorMode.preference
+  //   fallback: 'dark', // fallback value if not system preference found
+  //   hid: 'nuxt-color-mode-script',
+  //   globalName: '__NUXT_COLOR_MODE__',
+  //   componentName: 'ColorScheme',
+  //   dataValue: 'bs-theme',
+  //   classPrefix: '',
+  //   classSuffix: '',
+  //   storageKey: 'nuxt-color-mode',
+  // },
   nitro: {
     preset: 'vercel-edge',
   },

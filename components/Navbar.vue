@@ -1,49 +1,36 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-blur">
-    <div class="container-fluid d-flex justify-content-between">
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom border-4 navbar-style bg-unl-lighter-cream">
+    <div class="container-fluid d-flex justify-content-between px-5">
       <!-- Logo on the left -->
-      <a class="navbar-brand" href="#">
-        <!-- <img
+      <NuxtLink to="/" class="navbar-brand fs-2"> Dining To Go 2.0 </NuxtLink>
+      <!-- <a class="navbar-brand" href="/">
+        <img
           src="~/assets/logo/SG_Logo.png"
           alt=""
           width="30"
           height="24"
           class="d-inline-block align-text-top"
           draggable="false"
-        /> -->
-        Dining To Go 2.0
-      </a>
-
-      <!-- Links in the center -->
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mx-auto">
-          <!-- mx-auto centers the links -->
-          <li class="nav-item">
-            <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link" to="/about">About</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink class="nav-link" to="/restaurants">Restaurants</NuxtLink>
-          </li>
-        </ul>
-      </div>
-
+          />
+      </a> -->
       <!-- ColorModePicker and icon on the right -->
       <div class="d-flex align-items-center">
-        <ColorModePicker />
-        <div class="bi-person-circle ms-3"></div>
+        <!-- <ColorModePicker /> -->
+        <NuxtLink to="/orders/past" class="navbar-brand px-3 bi bi-clock-history fs-2"></NuxtLink>
+        <NuxtLink to="/orders/favorite" class="navbar-brand px-3 bi bi-heart-fill fs-2"></NuxtLink>
+        <NuxtLink to="/profile" class="navbar-brand px-3 bi bi-person-fill fs-2"></NuxtLink>
+        <NuxtLink to="/cart" class="navbar-brand px-3 bi bi-cart-fill fs-2"></NuxtLink>
       </div>
     </div>
   </nav>
 </template>
 
 <style scoped>
-.navbar-blur {
-  backdrop-filter: contrast(75%) blur(10px);
+.navbar-style {
+  min-height: var(--navbar-height) !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  border-color: var(--unl-scarlet) !important;
 }
 </style>
