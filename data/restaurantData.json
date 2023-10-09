@@ -264,7 +264,7 @@
       "name": "Chick-Fil-A",
       "isClosed": false,
       "route": "/restaurants",
-      "image": "/Chick-Fil-A-food.jpeg",
+      "image": "/chick-fil-a-food.jpeg",
       "logo": "/",
       "meals": [
         {
