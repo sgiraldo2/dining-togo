@@ -1,0 +1,396 @@
+{
+  "restaurants": [
+    {
+      "name": "Starbucks",
+      "isClosed": false,
+      "route": "/restaurants/starbucks",
+      "image": "/starbucks-food.jpeg",
+      "logo": "/starbucks-logo.png",
+      "meals": [
+        {
+          "name": "Caramel Macchiato",
+          "price": 4.99,
+          "image": "/images/meals/caramel-macchiato.jpg",
+          "customizations": [
+            {
+              "name": "Choose size",
+              "options": ["Tall", "Grande", "Venti"]
+            },
+            {
+              "name": "Choose milk",
+              "options": ["Whole", "2%", "Almond", "Soy"]
+            }
+          ]
+        },
+        {
+          "name": "Mocha Frappuccino",
+          "price": 5.49,
+          "image": "/images/meals/mocha-frappuccino.jpg",
+          "customizations": [
+            {
+              "name": "Choose size",
+              "options": ["Tall", "Grande", "Venti"]
+            },
+            {
+              "name": "Add whipped cream",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add caramel drizzle",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Spinach Feta Wrap",
+          "price": 3.99,
+          "image": "/images/meals/spinach-feta-wrap.jpg",
+          "customizations": [
+            {
+              "name": "Add bacon",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add extra cheese",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Choose bread",
+              "options": ["Wheat", "White", "Flatbread"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Qdoba",
+      "isClosed": false,
+      "route": "/restaurants",
+      "image": "/qdoba-food.jpeg",
+      "logo": "/",
+      "meals": [
+        {
+          "name": "Burrito Bowl",
+          "price": 7.99,
+          "image": "/images/meals/burrito-bowl.jpg",
+          "customizations": [
+            {
+              "name": "Choose protein",
+              "options": ["Chicken", "Steak", "Vegetarian"]
+            },
+            {
+              "name": "Add guacamole",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Choose rice",
+              "options": ["White", "Brown", "Cilantro Lime"]
+            }
+          ]
+        },
+        {
+          "name": "Taco Salad",
+          "price": 6.49,
+          "image": "/images/meals/taco-salad.jpg",
+          "customizations": [
+            {
+              "name": "Choose protein",
+              "options": ["Beef", "Chicken", "Pork"]
+            },
+            {
+              "name": "Add sour cream",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add extra cheese",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Nachos",
+          "price": 4.99,
+          "image": "/images/meals/nachos.jpg",
+          "customizations": [
+            {
+              "name": "Choose toppings",
+              "options": ["Salsa", "Jalapenos", "Black Beans"]
+            },
+            {
+              "name": "Add queso",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add guacamole",
+              "options": ["Yes", "No"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Subway",
+      "isClosed": false,
+      "route": "/restaurants",
+      "image": "/subway-food.jpeg",
+      "logo": "/",
+      "meals": [
+        {
+          "name": "Italian BMT",
+          "price": 6.99,
+          "image": "/images/meals/italian-bmt.jpg",
+          "customizations": [
+            {
+              "name": "Choose bread",
+              "options": ["Italian", "Honey Oat", "Wheat"]
+            },
+            {
+              "name": "Choose cheese",
+              "options": ["American", "Swiss", "Pepper Jack"]
+            },
+            {
+              "name": "Add veggies",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Veggie Delite",
+          "price": 5.49,
+          "image": "/images/meals/veggie-delite.jpg",
+          "customizations": [
+            {
+              "name": "Choose bread",
+              "options": ["Italian", "Honey Oat", "Wheat"]
+            },
+            {
+              "name": "Choose cheese",
+              "options": ["American", "Swiss", "Pepper Jack"]
+            },
+            {
+              "name": "Add extra veggies",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Meatball Marinara",
+          "price": 5.99,
+          "image": "/images/meals/meatball-marinara.jpg",
+          "customizations": [
+            {
+              "name": "Choose bread",
+              "options": ["Italian", "Honey Oat", "Wheat"]
+            },
+            {
+              "name": "Choose cheese",
+              "options": ["American", "Swiss", "Pepper Jack"]
+            },
+            {
+              "name": "Add veggies",
+              "options": ["Yes", "No"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Valentino's",
+      "isClosed": false,
+      "route": "/restaurants",
+      "image": "/valentinos-food.jpeg",
+      "logo": "/",
+      "meals": [
+        {
+          "name": "Pizza Slice",
+          "price": 2.99,
+          "image": "/images/meals/pizza-slice.jpg",
+          "customizations": [
+            {
+              "name": "Add toppings",
+              "options": ["Pepperoni", "Mushrooms", "Peppers"]
+            },
+            {
+              "name": "Choose crust",
+              "options": ["Thin", "Thick"]
+            },
+            {
+              "name": "Add extra cheese",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Spaghetti with Meatballs",
+          "price": 8.49,
+          "image": "/images/meals/spaghetti-meatballs.jpg",
+          "customizations": [
+            {
+              "name": "Choose sauce",
+              "options": ["Marinara", "Alfredo", "Pesto"]
+            },
+            {
+              "name": "Add extra meatballs",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Choose pasta",
+              "options": ["Spaghetti", "Fettuccine", "Penne"]
+            }
+          ]
+        },
+        {
+          "name": "Chicken Alfredo",
+          "price": 9.99,
+          "image": "/images/meals/chicken-alfredo.jpg",
+          "customizations": [
+            {
+              "name": "Add vegetables",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add extra chicken",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Choose pasta",
+              "options": ["Spaghetti", "Fettuccine", "Penne"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chick-Fil-A",
+      "isClosed": false,
+      "route": "/restaurants",
+      "image": "/Chick-Fil-A-food.jpeg",
+      "logo": "/",
+      "meals": [
+        {
+          "name": "Chick-fil-A Sandwich",
+          "price": 4.49,
+          "image": "/images/meals/chick-fil-a-sandwich.jpg",
+          "customizations": [
+            {
+              "name": "Choose bread",
+              "options": ["Regular", "Multigrain", "Biscuit"]
+            },
+            {
+              "name": "Add pickles",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add cheese",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Waffle Fries",
+          "price": 2.99,
+          "image": "/images/meals/waffle-fries.jpg",
+          "customizations": [
+            {
+              "name": "Add cheese sauce",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add ketchup",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add barbecue sauce",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Nuggets (8 pieces)",
+          "price": 6.99,
+          "image": "/images/meals/chick-fil-a-nuggets.jpg",
+          "customizations": [
+            {
+              "name": "Choose dipping sauce",
+              "options": ["Ranch", "Honey Mustard", "Polynesian"]
+            },
+            {
+              "name": "Add waffle fries",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add coleslaw",
+              "options": ["Yes", "No"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steak 'n Shake",
+      "isClosed": true,
+      "route": "/restaurants",
+      "image": "/steak-n-shake-food.jpeg",
+      "logo": "/",
+      "meals": [
+        {
+          "name": "Double Steakburger",
+          "price": 5.99,
+          "image": "/images/meals/double-steakburger.jpg",
+          "customizations": [
+            {
+              "name": "Choose cheese",
+              "options": ["American", "Swiss", "Pepper Jack"]
+            },
+            {
+              "name": "Add bacon",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add extra patty",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Frisco Melt",
+          "price": 6.49,
+          "image": "/images/meals/frisco-melt.jpg",
+          "customizations": [
+            {
+              "name": "Choose cheese",
+              "options": ["American", "Swiss", "Pepper Jack"]
+            },
+            {
+              "name": "Add bacon",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add extra patty",
+              "options": ["Yes", "No"]
+            }
+          ]
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": 5.99,
+          "image": "/images/meals/chicken-fingers.jpg",
+          "customizations": [
+            {
+              "name": "Choose dipping sauce",
+              "options": ["Ranch", "Honey Mustard", "Barbecue"]
+            },
+            {
+              "name": "Add waffle fries",
+              "options": ["Yes", "No"]
+            },
+            {
+              "name": "Add coleslaw",
+              "options": ["Yes", "No"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
