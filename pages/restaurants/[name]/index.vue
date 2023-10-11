@@ -7,12 +7,14 @@ import restaurantData from '~/data/restaurantData.json';
 // only want the restaurant that matches the route name
 const restaurant = restaurantData.restaurants.filter((restaurant) => restaurant.route === fullPath)[0];
 if (fullPath === '/restaurants/starbucks') {
-  const { data: starbucksMenu } = await useFetch('https://www.starbucks.com/bff/ordering/menu');
+  const { data: starbucksMenu } = await useFetch(
+    'https://www.starbucks.com/bff/ordering/menu'
+  );
   starbucksData.value = starbucksMenu.value;
   console.log(starbucksData.value);
 }
 
-// QDOBA URL 
+// QDOBA URL
 // https://order.qdoba.com/restaurants/80013/
 
 // chick-fil-a URL
@@ -21,21 +23,35 @@ if (fullPath === '/restaurants/starbucks') {
 // Subway URL
 // https://order.subway.com/api/menu?language=en&restaurantId=1
 
+// Task 1
 </script>
 
 <template>
   <div>
     <div class="container">
       <div v-if="restaurant">
-        <h1 class="text-center">{{ restaurant.name }}</h1>
-        <img
-          :src="`/restaurant-logo/` + restaurant.logo"
-          class="card-img-top"
-          alt="Restaurant Logo"
-          style="height: 200px; width: auto"
-        />
+        <!-- <h1 class="text-center">{{ restaurant.name }}</h1> -->
+        <div class="text-center">
+          <img
+            :src="`/restaurant-logo/` + restaurant.logo"
+            class="card-img-top"
+            alt="Restaurant Logo"
+            style="height: 200px; width: auto"
+          />
+        </div>
         <div v-if="starbucksData">
           <AccordionStarbucks :starbucksData="starbucksData" />
+        </div>
+        <div v-else>
+          <MealCardGroup :meals="restaurant.meals" />
+          <!-- <div v-for="meal in restaurant.meals">
+            <p>{{ meal.name }}</p>
+            <p>{{ meal.price }}</p>
+            <div v-for="customization in meal.customizations">
+              <p>{{ customization.name }}</p>
+            </div>
+            <p> end </p>
+          </div> -->
         </div>
         <!-- for meal in restaurant.meals -->
         <!-- <div class="row">
