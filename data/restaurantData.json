@@ -10,7 +10,7 @@
         {
           "name": "Caramel Macchiato",
           "price": 4.99,
-          "image": "/images/meals/caramel-macchiato.jpg",
+          "image": "/caramel-macchiato.jpg",
           "customizations": [
             {
               "name": "Choose size",
@@ -25,7 +25,7 @@
         {
           "name": "Mocha Frappuccino",
           "price": 5.49,
-          "image": "/images/meals/mocha-frappuccino.jpg",
+          "image": "/mocha-frapp.jpg",
           "customizations": [
             {
               "name": "Choose size",
@@ -42,9 +42,9 @@
           ]
         },
         {
-          "name": "Spinach Feta Wrap",
+          "name": "Spinach, Feta & Egg White Wrap",
           "price": 3.99,
-          "image": "/images/meals/spinach-feta-wrap.jpg",
+          "image": "/spinach-feta-wrap.jpg",
           "customizations": [
             {
               "name": "Add bacon",
@@ -65,14 +65,14 @@
     {
       "name": "Qdoba",
       "isClosed": false,
-      "route": "/restaurants",
+      "route": "/restaurants/qdoba",
       "image": "/qdoba-food.jpeg",
-      "logo": "/",
+      "logo": "/qdoba-logo.png",
       "meals": [
         {
           "name": "Burrito Bowl",
           "price": 7.99,
-          "image": "/images/meals/burrito-bowl.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose protein",
@@ -91,7 +91,7 @@
         {
           "name": "Taco Salad",
           "price": 6.49,
-          "image": "/images/meals/taco-salad.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose protein",
@@ -110,7 +110,7 @@
         {
           "name": "Nachos",
           "price": 4.99,
-          "image": "/images/meals/nachos.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose toppings",
@@ -131,14 +131,14 @@
     {
       "name": "Subway",
       "isClosed": false,
-      "route": "/restaurants",
+      "route": "/restaurants/subway",
       "image": "/subway-food.jpeg",
-      "logo": "/",
+      "logo": "/subway-logo.png",
       "meals": [
         {
           "name": "Italian BMT",
           "price": 6.99,
-          "image": "/images/meals/italian-bmt.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose bread",
@@ -157,7 +157,7 @@
         {
           "name": "Veggie Delite",
           "price": 5.49,
-          "image": "/images/meals/veggie-delite.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose bread",
@@ -176,7 +176,7 @@
         {
           "name": "Meatball Marinara",
           "price": 5.99,
-          "image": "/images/meals/meatball-marinara.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose bread",
@@ -197,14 +197,14 @@
     {
       "name": "Valentino's",
       "isClosed": false,
-      "route": "/restaurants",
+      "route": "/restaurants/valentinos",
       "image": "/valentinos-food.jpeg",
-      "logo": "/",
+      "logo": "/valentinos-logo.png",
       "meals": [
         {
           "name": "Pizza Slice",
           "price": 2.99,
-          "image": "/images/meals/pizza-slice.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Add toppings",
@@ -223,7 +223,7 @@
         {
           "name": "Spaghetti with Meatballs",
           "price": 8.49,
-          "image": "/images/meals/spaghetti-meatballs.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose sauce",
@@ -242,7 +242,7 @@
         {
           "name": "Chicken Alfredo",
           "price": 9.99,
-          "image": "/images/meals/chicken-alfredo.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Add vegetables",
@@ -263,14 +263,14 @@
     {
       "name": "Chick-Fil-A",
       "isClosed": false,
-      "route": "/restaurants",
+      "route": "/restaurants/chick-fil-a",
       "image": "/chick-fil-a-food.jpeg",
-      "logo": "/",
+      "logo": "/chick-fil-a-logo.png",
       "meals": [
         {
           "name": "Chick-fil-A Sandwich",
           "price": 4.49,
-          "image": "/images/meals/chick-fil-a-sandwich.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose bread",
@@ -289,7 +289,7 @@
         {
           "name": "Waffle Fries",
           "price": 2.99,
-          "image": "/images/meals/waffle-fries.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Add cheese sauce",
@@ -308,7 +308,7 @@
         {
           "name": "Nuggets (8 pieces)",
           "price": 6.99,
-          "image": "/images/meals/chick-fil-a-nuggets.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose dipping sauce",
@@ -329,14 +329,14 @@
     {
       "name": "Steak 'n Shake",
       "isClosed": true,
-      "route": "/restaurants",
+      "route": "/restaurants/steak-n-shake",
       "image": "/steak-n-shake-food.jpeg",
-      "logo": "/",
+      "logo": "/steak-n-shake-logo.png",
       "meals": [
         {
           "name": "Double Steakburger",
           "price": 5.99,
-          "image": "/images/meals/double-steakburger.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose cheese",
@@ -355,7 +355,7 @@
         {
           "name": "Frisco Melt",
           "price": 6.49,
-          "image": "/images/meals/frisco-melt.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose cheese",
@@ -374,7 +374,7 @@
         {
           "name": "Chicken Fingers",
           "price": 5.99,
-          "image": "/images/meals/chicken-fingers.jpg",
+          "image": "/placeholder-meal.png",
           "customizations": [
             {
               "name": "Choose dipping sauce",
