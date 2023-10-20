@@ -1,16 +1,13 @@
 <script setup>
 useSeoMeta({
   title: 'Dining To Go 2.0',
-  description:
-    'EnterDescHere',
+  description: 'EnterDescHere',
   ogTitle: 'Dining To Go 2.0',
-  ogDescription:
-    'EnterDescHere',
+  ogDescription: 'EnterDescHere',
   // ogImage: '/todo.jpg',
   // ogUrl: '',
   twitterTitle: 'Dining To Go 2.0',
-  twitterDescription:
-    'EnterDescHere',
+  twitterDescription: 'EnterDescHere',
   // twitterImage: '/todo.jpg',
   twitterCard: 'summary_large_image',
 });
@@ -35,7 +32,7 @@ useHead({
     <div class="navbar-padding">
       <NuxtPage />
       <CartOffCanvas />
-
+      <CheckedOutModal />
     </div>
   </div>
 </template>

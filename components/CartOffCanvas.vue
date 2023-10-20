@@ -49,9 +49,7 @@ const clearCart = () => {
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">{{ item.name }}</h5>
-                  <p class="card-text">
-                    ${{ item.price }}
-                  </p>
+                  <p class="card-text">${{ item.price }}</p>
                   <span>Quantity: {{ item.quantity }}</span>
                 </div>
                 <button @click="removeItem(item.id)">Remove</button>
@@ -61,7 +59,7 @@ const clearCart = () => {
         </div>
         <div>Total Price: ${{ cart.totalPrice }}</div>
         <!-- TODO: Truncate or round up to only show 2 decimals -->
-        <button v-if="cart.items.length > 0" @click="clearCart">Check Out!</button>
+        <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="clearCart" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
         <!-- TODO: Display checkout notification  from checked out state -->
       </div>
       <div v-else>Your cart is empty</div>
