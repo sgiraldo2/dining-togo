@@ -8,6 +8,10 @@ export default defineNuxtConfig({
   devServer: {
     port: 3010,
   },
+  modules: [
+    // ...
+    '@pinia/nuxt',
+  ],
   // modules: ['@nuxtjs/color-mode'],
   // colorMode: {
   //   preference: 'system', // default value of $colorMode.preference

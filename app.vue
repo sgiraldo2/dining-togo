@@ -34,6 +34,8 @@ useHead({
     <Navbar />
     <div class="navbar-padding">
       <NuxtPage />
+      <CartOffCanvas />
+
     </div>
   </div>
 </template>

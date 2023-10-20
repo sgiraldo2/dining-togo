@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useCartStore } from '~/store/cart';
+
+const cart = useCartStore();
+</script>
 
 <template>
   <nav class="navbar navbar-expand-lg fixed-top border-bottom border-4 navbar-style bg-unl-lighter-cream">
@@ -21,7 +25,20 @@
         <NuxtLink to="/orders/past" class="navbar-brand px-3 bi bi-clock-history fs-2"></NuxtLink>
         <NuxtLink to="/orders/favorite" class="navbar-brand px-3 bi bi-heart-fill fs-2"></NuxtLink>
         <NuxtLink to="/profile" class="navbar-brand px-3 bi bi-person-fill fs-2"></NuxtLink>
-        <NuxtLink to="/cart" class="navbar-brand px-3 bi bi-cart-fill fs-2"></NuxtLink>
+        <!-- <NuxtLink to="/cart" class="navbar-brand px-3 bi bi-cart-fill fs-2"></NuxtLink> -->
+        <!-- <CartOffCanvas /> -->
+        <a
+          class="navbar-brand px-3 bi bi-cart-fill fs-2 position-relative"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          <span class="mt-2 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-5">
+            {{cart.totalItems}}
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </a>
       </div>
     </div>
   </nav>

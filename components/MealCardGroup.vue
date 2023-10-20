@@ -1,5 +1,24 @@
 <script setup>
+import { useCartStore } from '~/store/cart'
 const { meals } = defineProps(['meals']);
+
+const cart = useCartStore()
+
+const selectedCustomizations = ref({}) 
+
+const addToCart = (meal) => {
+  const item = {
+    id: meal.name,  // Assume the meal name is unique; otherwise, use a proper unique ID
+    name: meal.name,
+    price: meal.price,
+    image: meal.image,
+    quantity: 1,
+    customizations: selectedCustomizations.value
+  }
+  console.log(item)
+  cart.addItem(item)
+}
+
 </script>
 
 <template>
@@ -10,7 +29,7 @@ const { meals } = defineProps(['meals']);
         <div class="card-body">
           <h3 class="card-title">{{ meal.name }}</h3>
           <p>{{ meal.price }}</p>
-          <button class="">Add to cart!</button>
+          <button @click="addToCart(meal)">Add to cart!</button>
         </div>
       </NuxtLink>
     </div>

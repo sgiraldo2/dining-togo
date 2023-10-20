@@ -12,14 +12,8 @@
           "price": 4.99,
           "image": "/caramel-macchiato.jpg",
           "customizations": [
-            {
-              "name": "Choose size",
-              "options": ["Tall", "Grande", "Venti"]
-            },
-            {
-              "name": "Choose milk",
-              "options": ["Whole", "2%", "Almond", "Soy"]
-            }
+            { "name": "Choose size", "options": ["Tall", "Grande", "Venti"] },
+            { "name": "Choose milk", "options": ["Whole", "2%", "Almond", "Soy"] }
           ]
         },
         {
@@ -27,18 +21,9 @@
           "price": 5.49,
           "image": "/mocha-frapp.jpg",
           "customizations": [
-            {
-              "name": "Choose size",
-              "options": ["Tall", "Grande", "Venti"]
-            },
-            {
-              "name": "Add whipped cream",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add caramel drizzle",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose size", "options": ["Tall", "Grande", "Venti"] },
+            { "name": "Add whipped cream", "options": ["Yes", "No"] },
+            { "name": "Add caramel drizzle", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -46,20 +31,22 @@
           "price": 3.99,
           "image": "/spinach-feta-wrap.jpg",
           "customizations": [
-            {
-              "name": "Add bacon",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add extra cheese",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Choose bread",
-              "options": ["Wheat", "White", "Flatbread"]
-            }
+            { "name": "Add bacon", "options": ["Yes", "No"] },
+            { "name": "Add extra cheese", "options": ["Yes", "No"] },
+            { "name": "Choose bread", "options": ["Wheat", "White", "Flatbread"] }
           ]
-        }
+        },
+        {
+          "name": "Pumpkin Spice Latte",
+          "price": 5.25,
+          "image": "/placeholder-meal.png",
+          "customizations": [
+            { "name": "Choose size", "options": ["Tall", "Grande", "Venti"] },
+            { "name": "Choose milk", "options": ["Whole", "2%", "Almond", "Soy"] }
+          ],
+          "id": 19
+        },
+        { "name": "Banana Nut Bread", "price": 2.75, "image": "/placeholder-meal.png", "customizations": [], "id": 20 }
       ]
     },
     {
@@ -74,18 +61,9 @@
           "price": 7.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose protein",
-              "options": ["Chicken", "Steak", "Vegetarian"]
-            },
-            {
-              "name": "Add guacamole",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Choose rice",
-              "options": ["White", "Brown", "Cilantro Lime"]
-            }
+            { "name": "Choose protein", "options": ["Chicken", "Steak", "Vegetarian"] },
+            { "name": "Add guacamole", "options": ["Yes", "No"] },
+            { "name": "Choose rice", "options": ["White", "Brown", "Cilantro Lime"] }
           ]
         },
         {
@@ -93,18 +71,9 @@
           "price": 6.49,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose protein",
-              "options": ["Beef", "Chicken", "Pork"]
-            },
-            {
-              "name": "Add sour cream",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add extra cheese",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose protein", "options": ["Beef", "Chicken", "Pork"] },
+            { "name": "Add sour cream", "options": ["Yes", "No"] },
+            { "name": "Add extra cheese", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -112,19 +81,24 @@
           "price": 4.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose toppings",
-              "options": ["Salsa", "Jalapenos", "Black Beans"]
-            },
-            {
-              "name": "Add queso",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add guacamole",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose toppings", "options": ["Salsa", "Jalapenos", "Black Beans"] },
+            { "name": "Add queso", "options": ["Yes", "No"] },
+            { "name": "Add guacamole", "options": ["Yes", "No"] }
           ]
+        },
+        {
+          "name": "Grilled Steak Tacos",
+          "price": 8.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose toppings", "options": ["Salsa", "Cheese", "Guacamole"] }],
+          "id": 21
+        },
+        {
+          "name": "Mango Salad",
+          "price": 7.49,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose protein", "options": ["Chicken", "Steak", "Vegetarian"] }],
+          "id": 22
         }
       ]
     },
@@ -140,18 +114,9 @@
           "price": 6.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose bread",
-              "options": ["Italian", "Honey Oat", "Wheat"]
-            },
-            {
-              "name": "Choose cheese",
-              "options": ["American", "Swiss", "Pepper Jack"]
-            },
-            {
-              "name": "Add veggies",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose bread", "options": ["Italian", "Honey Oat", "Wheat"] },
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add veggies", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -159,18 +124,9 @@
           "price": 5.49,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose bread",
-              "options": ["Italian", "Honey Oat", "Wheat"]
-            },
-            {
-              "name": "Choose cheese",
-              "options": ["American", "Swiss", "Pepper Jack"]
-            },
-            {
-              "name": "Add extra veggies",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose bread", "options": ["Italian", "Honey Oat", "Wheat"] },
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add extra veggies", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -178,19 +134,24 @@
           "price": 5.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose bread",
-              "options": ["Italian", "Honey Oat", "Wheat"]
-            },
-            {
-              "name": "Choose cheese",
-              "options": ["American", "Swiss", "Pepper Jack"]
-            },
-            {
-              "name": "Add veggies",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose bread", "options": ["Italian", "Honey Oat", "Wheat"] },
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add veggies", "options": ["Yes", "No"] }
           ]
+        },
+        {
+          "name": "Meal X",
+          "price": 9.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
+          "id": 23
+        },
+        {
+          "name": "Meal Y",
+          "price": 10.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
+          "id": 24
         }
       ]
     },
@@ -206,18 +167,9 @@
           "price": 2.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Add toppings",
-              "options": ["Pepperoni", "Mushrooms", "Peppers"]
-            },
-            {
-              "name": "Choose crust",
-              "options": ["Thin", "Thick"]
-            },
-            {
-              "name": "Add extra cheese",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Add toppings", "options": ["Pepperoni", "Mushrooms", "Peppers"] },
+            { "name": "Choose crust", "options": ["Thin", "Thick"] },
+            { "name": "Add extra cheese", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -225,18 +177,9 @@
           "price": 8.49,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose sauce",
-              "options": ["Marinara", "Alfredo", "Pesto"]
-            },
-            {
-              "name": "Add extra meatballs",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Choose pasta",
-              "options": ["Spaghetti", "Fettuccine", "Penne"]
-            }
+            { "name": "Choose sauce", "options": ["Marinara", "Alfredo", "Pesto"] },
+            { "name": "Add extra meatballs", "options": ["Yes", "No"] },
+            { "name": "Choose pasta", "options": ["Spaghetti", "Fettuccine", "Penne"] }
           ]
         },
         {
@@ -244,19 +187,24 @@
           "price": 9.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Add vegetables",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add extra chicken",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Choose pasta",
-              "options": ["Spaghetti", "Fettuccine", "Penne"]
-            }
+            { "name": "Add vegetables", "options": ["Yes", "No"] },
+            { "name": "Add extra chicken", "options": ["Yes", "No"] },
+            { "name": "Choose pasta", "options": ["Spaghetti", "Fettuccine", "Penne"] }
           ]
+        },
+        {
+          "name": "Meal X",
+          "price": 9.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
+          "id": 25
+        },
+        {
+          "name": "Meal Y",
+          "price": 10.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
+          "id": 26
         }
       ]
     },
@@ -272,18 +220,9 @@
           "price": 4.49,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose bread",
-              "options": ["Regular", "Multigrain", "Biscuit"]
-            },
-            {
-              "name": "Add pickles",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add cheese",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose bread", "options": ["Regular", "Multigrain", "Biscuit"] },
+            { "name": "Add pickles", "options": ["Yes", "No"] },
+            { "name": "Add cheese", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -291,18 +230,9 @@
           "price": 2.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Add cheese sauce",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add ketchup",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add barbecue sauce",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Add cheese sauce", "options": ["Yes", "No"] },
+            { "name": "Add ketchup", "options": ["Yes", "No"] },
+            { "name": "Add barbecue sauce", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -310,19 +240,24 @@
           "price": 6.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose dipping sauce",
-              "options": ["Ranch", "Honey Mustard", "Polynesian"]
-            },
-            {
-              "name": "Add waffle fries",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add coleslaw",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose dipping sauce", "options": ["Ranch", "Honey Mustard", "Polynesian"] },
+            { "name": "Add waffle fries", "options": ["Yes", "No"] },
+            { "name": "Add coleslaw", "options": ["Yes", "No"] }
           ]
+        },
+        {
+          "name": "Meal X",
+          "price": 9.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
+          "id": 27
+        },
+        {
+          "name": "Meal Y",
+          "price": 10.99,
+          "image": "/placeholder-meal.png",
+          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
+          "id": 28
         }
       ]
     },
@@ -338,18 +273,9 @@
           "price": 5.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose cheese",
-              "options": ["American", "Swiss", "Pepper Jack"]
-            },
-            {
-              "name": "Add bacon",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add extra patty",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add bacon", "options": ["Yes", "No"] },
+            { "name": "Add extra patty", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -357,18 +283,9 @@
           "price": 6.49,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose cheese",
-              "options": ["American", "Swiss", "Pepper Jack"]
-            },
-            {
-              "name": "Add bacon",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add extra patty",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add bacon", "options": ["Yes", "No"] },
+            { "name": "Add extra patty", "options": ["Yes", "No"] }
           ]
         },
         {
@@ -376,19 +293,30 @@
           "price": 5.99,
           "image": "/placeholder-meal.png",
           "customizations": [
-            {
-              "name": "Choose dipping sauce",
-              "options": ["Ranch", "Honey Mustard", "Barbecue"]
-            },
-            {
-              "name": "Add waffle fries",
-              "options": ["Yes", "No"]
-            },
-            {
-              "name": "Add coleslaw",
-              "options": ["Yes", "No"]
-            }
+            { "name": "Choose dipping sauce", "options": ["Ranch", "Honey Mustard", "Barbecue"] },
+            { "name": "Add waffle fries", "options": ["Yes", "No"] },
+            { "name": "Add coleslaw", "options": ["Yes", "No"] }
           ]
+        },
+        {
+          "name": "Garlic Double Steakburger",
+          "price": 6.49,
+          "image": "/garlic-double-steakburger.png",
+          "customizations": [
+            { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
+            { "name": "Add bacon", "options": ["Yes", "No"] }
+          ],
+          "id": 23
+        },
+        {
+          "name": "Chocolate Milkshake",
+          "price": 3.49,
+          "image": "/chocolate-milkshake.png",
+          "customizations": [
+            { "name": "Add whipped cream", "options": ["Yes", "No"] },
+            { "name": "Add cherry", "options": ["Yes", "No"] }
+          ],
+          "id": 24
         }
       ]
     }
