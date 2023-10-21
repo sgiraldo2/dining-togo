@@ -15,16 +15,16 @@ npm install
 
 Start the development server on by running:
 
+Then you should be able to click on the local host link in your IDE. It is usually on http://localhost:3000
+
 ```bash
 # npm
 npm run dev
 ```
 
-Then you should be able to click on the local host link in your ide. It is usually on http://localhost:3000
-
 ## Production
 
-The production link for the applicaiton is on this page https://togo.santiago.works/:
+The production link for the application is on this page https://togo.santiago.works/:
 
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
