@@ -22,18 +22,36 @@ const order = useOrderStore()
   <div>
 
     <img src="~/assets/img/unl-pic-1.jpg" alt="Image of the University of Nebraska" class="img-fluid" />
-    <div class="container-fluid px-5 pt-3">
-      <span v-for="item in order.items" :key="item.id">
-        <!-- Green banner for each order item -->
-        <div class="alert alert-success d-flex align-items-center mb-3" role="alert">
-          <img :src="'/restaurant-food/meal/' + item.image" alt="Image of food" class="img-fluid me-3" style="max-width: 80px;" />
-          <div>
-            <h3 class="mb-0">{{ item.name }}</h3>
-            <p class="mb-0">Order Placed</p>
+  <div class="container-fluid px-5 pt-3">
+    <span v-for="item in order.items" :key="item.id">
+      <!-- Green banner for each order item -->
+      <div class="alert alert-success d-flex align-items-center mb-3" role="alert">
+        <img :src="'/restaurant-food/meal/' + item.image" alt="Image of food" class="img-fluid me-3" style="max-width: 80px;" />
+        <div>
+          <h3 class="mb-0">{{ item.name }}</h3>
+          <p class="mb-0">Order Placed</p>
+        </div>
+        <!-- QR Code image on the right side -->
+        <img
+          src="../assets/img/qrCode.jpeg"
+          alt="QR Code"
+          class="img-fluid ms-auto"
+          style="max-width: 80px; cursor: pointer;"
+          @click="openQrCodeModal(item.qrCodeUrl)"
+        />
+      </div>
+    </span>
+    <!-- Modal for displaying QR code -->
+    <div class="modal" tabindex="-1" role="dialog" :class="{ 'd-block': isQrCodeModalVisible }">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img :src="qrCodeImageUrl" alt="QR Code" class="img-fluid" />
           </div>
         </div>
-      </span>
+      </div>
     </div>
+  </div>
     <div class="container-fluid px-5 pt-5">
       <div class="row">
         <div class="col bg-unl-cream rounded-4">
