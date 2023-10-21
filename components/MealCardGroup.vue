@@ -1,8 +1,10 @@
 <script setup>
 import { useCartStore } from '~/store/cart'
+import { useFavoriteStore } from '~/store/cart'
 const { meals } = defineProps(['meals']);
 
 const cart = useCartStore()
+const f = useFavoriteStore()
 
 const selectedCustomizations = ref({}) 
 
@@ -18,6 +20,18 @@ const addToCart = (meal) => {
   cart.addItem(item)
 }
 
+const addFavorite = (meal) => {
+  const item = {
+    id: meal.name,  // Assume the meal name is unique; otherwise, use a proper unique ID
+    name: meal.name,
+    price: meal.price,
+    image: meal.image,
+    quantity: 1,
+    customizations: selectedCustomizations.value
+  }
+  f.addItem(f)
+}
+
 </script>
 
 <template>
@@ -29,6 +43,7 @@ const addToCart = (meal) => {
           <h3 class="card-title">{{ meal.name }}</h3>
           <p>{{ meal.price }}</p>
           <button @click="addToCart(meal)" class="btn btn-primary">Add to cart!</button>
+          <button @click="addFavorite(meal)" class="btn btn-primary">Favorite</button>
         </div>
       </NuxtLink>
     </div>

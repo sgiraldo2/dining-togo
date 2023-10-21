@@ -22,12 +22,18 @@ const order = useOrderStore()
   <div>
 
     <img src="~/assets/img/unl-pic-1.jpg" alt="Image of the University of Nebraska" class="img-fluid" />
+    <div class="container-fluid px-5 pt-3">
       <span v-for="item in order.items" :key="item.id">
-        <p>Order Placed</p>
-        {{ item.name }}
-        <img :src="'/restaurant-food/meal/' + item.image" alt="Image of food" />
-        <br>
+        <!-- Green banner for each order item -->
+        <div class="alert alert-success d-flex align-items-center mb-3" role="alert">
+          <img :src="'/restaurant-food/meal/' + item.image" alt="Image of food" class="img-fluid me-3" style="max-width: 80px;" />
+          <div>
+            <h3 class="mb-0">{{ item.name }}</h3>
+            <p class="mb-0">Order Placed</p>
+          </div>
+        </div>
       </span>
+    </div>
     <div class="container-fluid px-5 pt-5">
       <div class="row">
         <div class="col bg-unl-cream rounded-4">
