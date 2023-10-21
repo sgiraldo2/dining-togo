@@ -51,7 +51,6 @@
 <script setup>
 const colorMode = useColorMode();
 
-console.log(colorMode.preference);
 
 // function setColorMode(mode) {
 //   colorMode.preference = mode;

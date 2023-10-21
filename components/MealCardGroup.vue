@@ -15,7 +15,6 @@ const addToCart = (meal) => {
     quantity: 1,
     customizations: selectedCustomizations.value
   }
-  console.log(item)
   cart.addItem(item)
 }
 
@@ -29,7 +28,7 @@ const addToCart = (meal) => {
         <div class="card-body">
           <h3 class="card-title">{{ meal.name }}</h3>
           <p>{{ meal.price }}</p>
-          <button @click="addToCart(meal)">Add to cart!</button>
+          <button @click="addToCart(meal)" class="btn btn-primary">Add to cart!</button>
         </div>
       </NuxtLink>
     </div>

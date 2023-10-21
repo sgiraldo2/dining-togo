@@ -11,7 +11,6 @@ if (fullPath === '/restaurants/starbucks') {
     'https://www.starbucks.com/bff/ordering/menu'
   );
   starbucksData.value = starbucksMenu.value;
-  console.log(starbucksData.value);
 }
 
 // QDOBA URL

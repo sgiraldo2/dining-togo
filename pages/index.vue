@@ -1,4 +1,5 @@
 <script setup>
+import { useOrderStore } from '~/store/cart';
 import restaurantData from '~/data/restaurantData.json';
 // List of only open Restaurants
 const openRestaurants = restaurantData.restaurants.filter((restaurant) => !restaurant.isClosed);
@@ -14,11 +15,19 @@ const cardTwo = {
   isClosed: true,
   image: 'chick-fil-a-food.jpeg',
 };
+const order = useOrderStore()
 </script>
 
 <template>
   <div>
+
     <img src="~/assets/img/unl-pic-1.jpg" alt="Image of the University of Nebraska" class="img-fluid" />
+      <span v-for="item in order.items" :key="item.id">
+        <p>Order Placed</p>
+        {{ item.name }}
+        <img :src="'/restaurant-food/meal/' + item.image" alt="Image of food" />
+        <br>
+      </span>
     <div class="container-fluid px-5 pt-5">
       <div class="row">
         <div class="col bg-unl-cream rounded-4">
