@@ -14,19 +14,18 @@ Make sure to install the dependencies by running:
 npm install
 ```
 
-## Development Server
-
 Start the development server by running:
-
-Then you should be able to click on the local host link in your IDE. It is usually on http://localhost:3010
 
 ```bash
 npm run dev
 ```
 
+Then you should be able to click on the local host link in your IDE. It is usually on http://localhost:3010
+
 ## Production
 
 The production link for the application is on this page https://togo.santiago.works/
+
 You should be able to click the above production link to see the hosted application
 
 
