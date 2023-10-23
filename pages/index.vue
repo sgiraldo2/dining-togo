@@ -16,6 +16,12 @@ const cardTwo = {
   image: 'chick-fil-a-food.jpeg',
 };
 const order = useOrderStore()
+let qrCodeImageUrl = ''
+let isQrCodeModalVisible = false;
+const openQrCodeModal = (imageUrl) => {
+  qrCodeImageUrl = imageUrl;
+  isQrCodeModalVisible = true;
+};
 </script>
 
 <template>
