@@ -12,7 +12,7 @@
           <h1 class="modal-title fs-5" id="checkedOutLabel">Your order has been placed!</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">Enjoy your food and we hope to see you again.</div>
+        <div class="modal-body">Your order has been processed. Return back to the homepage to view your QR code for the order.</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
