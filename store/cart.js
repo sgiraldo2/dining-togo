@@ -66,7 +66,7 @@ export const useOrderStore = defineStore('order', {
   }
 })
 
-export const useFavoriteStore = defineStore('f', {
+export const useFavoriteStore = defineStore('favoriteItems', {
   state: () => ({
     items: []
   }),

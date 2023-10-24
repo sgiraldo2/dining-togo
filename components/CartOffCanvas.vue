@@ -33,7 +33,6 @@ const sendEmail = () => {
 
 const clearCart = () => {
   order.items = cart.items
-  console.log(order.items)
   sendEmail(serviceID, templateID, userID);
   cart.removeAllItems();
   // TODO: Create a state to track the cart being checked out
