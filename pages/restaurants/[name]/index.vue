@@ -6,12 +6,12 @@ const starbucksData = ref(null);
 import restaurantData from '~/data/restaurantData.json';
 // only want the restaurant that matches the route name
 const restaurant = restaurantData.restaurants.filter((restaurant) => restaurant.route === fullPath)[0];
-if (fullPath === '/restaurants/starbucks') {
-  const { data: starbucksMenu } = await useFetch(
-    'https://www.starbucks.com/bff/ordering/menu'
-  );
-  starbucksData.value = starbucksMenu.value;
-}
+// if (fullPath === '/restaurants/starbucks') {
+//   const { data: starbucksMenu } = await useFetch(
+//     'https://www.starbucks.com/bff/ordering/menu'
+//   );
+//   starbucksData.value = starbucksMenu.value;
+// }
 
 // QDOBA URL
 // https://order.qdoba.com/restaurants/80013/
