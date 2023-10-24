@@ -2,74 +2,31 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Authors
+
+This application is created by: Kendry Arrazcaeta Duray, Santiago Giraldo, Harish Krishnappan, Madison Maloney, Lorelei Trimberger
+
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install the dependencies by running:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Start the development server by running:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
+
+Then you should be able to click on the local host link in your IDE. It is usually on http://localhost:3010
 
 ## Production
 
-Build the application for production:
+The production link for the application is on this page https://togo.santiago.works/
 
-```bash
-# npm
-npm run build
+You should be able to click the above production link to see the hosted application
 
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

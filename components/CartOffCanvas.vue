@@ -1,15 +1,44 @@
 <script setup>
+import emailjs from '@emailjs/browser';
 import { useCartStore } from '~/store/cart';
+import { useOrderStore } from '~/store/cart';
+
 
 const cart = useCartStore();
+const order = useOrderStore()
 
 const removeItem = (id) => {
   cart.removeItem(id);
 };
 
+const serviceID = 'service_z8rqm0k';
+const templateID = 'template_m5pi14s';
+const userID = '9OlUggknYeKYAXBQI';
+
+const emailParams = {
+  name: "Husker Herbie",
+  email: "Husker.Herbie@huskers.com",
+  message: "Husker just placed an order of:" + order.items,
+}
+
+const sendEmail = () => {
+  emailjs.send(serviceID, templateID, emailParams, userID)
+    .then((result) => {
+      console.log('Message Sent!');
+    })
+    .catch((error) => {
+      console.log('Message Failed');
+    });
+};
+
 const clearCart = () => {
+  order.items = cart.items
+  sendEmail(serviceID, templateID, userID);
   cart.removeAllItems();
   // TODO: Create a state to track the cart being checked out
+};
+
+const customizeMenu = (id) => {
 };
 </script>
 
@@ -52,12 +81,13 @@ const clearCart = () => {
                   <p class="card-text">${{ item.price }}</p>
                   <span>Quantity: {{ item.quantity }}</span>
                 </div>
-                <button @click="removeItem(item.id)">Remove</button>
+                <button @click="customizeMenu(item.id)" class="btn btn-success btn-sm me-2">Customize</button>
+                <button @click="removeItem(item.id)" class="btn btn-danger btn-sm">Remove</button>
               </div>
             </div>
           </div>
         </div>
-        <div>Total Price: ${{ cart.totalPrice }}</div>
+      <div>Total Price: ${{ cart.totalPrice.toFixed(2) }}</div>
         <!-- TODO: Truncate or round up to only show 2 decimals -->
         <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="clearCart" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
         <!-- TODO: Display checkout notification  from checked out state -->
