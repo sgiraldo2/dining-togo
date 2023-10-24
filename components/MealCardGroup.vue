@@ -1,7 +1,6 @@
 <script setup>
 import { useCartStore } from '~/store/cart'
 import { useFavoriteStore } from '~/store/cart'
-import '@fortawesome/fontawesome-free/css/all.css'
 const { meals } = defineProps(['meals']);
 
 const cart = useCartStore()
@@ -46,7 +45,7 @@ const addFavorite = (meal) => {
           <button @click="addToCart(meal)" class="btn btn-primary">Add to cart!</button>
           <!-- Star icon for favorite -->
           <button @click="addFavorite(meal)" class="btn btn-link position-absolute top-0 end-0 hover-button" style="color: yellow;">
-            <i class="fas fa-star"></i>
+            <i class="bi bi-star-fill"></i>
           </button>
         </div>
       </NuxtLink>
