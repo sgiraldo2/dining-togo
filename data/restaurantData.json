@@ -138,20 +138,6 @@
             { "name": "Choose cheese", "options": ["American", "Swiss", "Pepper Jack"] },
             { "name": "Add veggies", "options": ["Yes", "No"] }
           ]
-        },
-        {
-          "name": "Meal X",
-          "price": 9.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
-          "id": 23
-        },
-        {
-          "name": "Meal Y",
-          "price": 10.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
-          "id": 24
         }
       ]
     },
@@ -191,20 +177,6 @@
             { "name": "Add extra chicken", "options": ["Yes", "No"] },
             { "name": "Choose pasta", "options": ["Spaghetti", "Fettuccine", "Penne"] }
           ]
-        },
-        {
-          "name": "Meal X",
-          "price": 9.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
-          "id": 25
-        },
-        {
-          "name": "Meal Y",
-          "price": 10.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
-          "id": 26
         }
       ]
     },
@@ -244,20 +216,6 @@
             { "name": "Add waffle fries", "options": ["Yes", "No"] },
             { "name": "Add coleslaw", "options": ["Yes", "No"] }
           ]
-        },
-        {
-          "name": "Meal X",
-          "price": 9.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose spice level", "options": ["Mild", "Medium", "Hot"] }],
-          "id": 27
-        },
-        {
-          "name": "Meal Y",
-          "price": 10.99,
-          "image": "/placeholder-meal.png",
-          "customizations": [{ "name": "Choose size", "options": ["Small", "Medium", "Large"] }],
-          "id": 28
         }
       ]
     },

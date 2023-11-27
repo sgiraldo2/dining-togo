@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Dining To Go 2.0 built in Nuxt 3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -29,4 +29,4 @@ The production link for the application is on this page https://togo.santiago.wo
 You should be able to click the above production link to see the hosted application
 
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the deployment documentation [nuxt](https://nuxt.com/docs/getting-started/deployment) and [vercel](https://vercel.com/docs/frameworks/nuxt) for more information.
