@@ -15,7 +15,7 @@ const addToCart = (meal) => {
     price: meal.price,
     image: meal.image,
     quantity: 1,
-    customizations: selectedCustomizations.value
+    customizations: meal.customizations
   }
   cart.addItem(item)
 }
