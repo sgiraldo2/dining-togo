@@ -21,6 +21,18 @@ export const useCartStore = defineStore('cart', {
     },
     removeAllItems() {
       this.items = []
+    },
+    increaseItemQuantity(id) {
+      const found = this.items.find(i => i.id === id)
+      if (found) {
+        found.quantity++
+      }
+    },
+    decreaseItemQuantity(id) {
+      const found = this.items.find(i => i.id === id)
+      if (found && found.quantity > 1) {
+        found.quantity--
+      }
     }
   },
   getters: {
