@@ -11,6 +11,14 @@ const removeItem = (id) => {
   cart.removeItem(id);
 };
 
+const increaseItemQuantity = (id) => {
+  cart.increaseItemQuantity(id);
+};
+
+const decreaseItemQuantity = (id) => {
+  cart.decreaseItemQuantity(id);
+};
+
 const serviceID = 'service_z8rqm0k';
 const templateID = 'template_m5pi14s';
 const userID = '9OlUggknYeKYAXBQI';
@@ -31,7 +39,7 @@ const sendEmail = () => {
     });
 };
 
-const clearCart = () => {
+const checkOut = () => {
   order.items = cart.items
   sendEmail(serviceID, templateID, userID);
   cart.removeAllItems();
@@ -40,28 +48,11 @@ const clearCart = () => {
 
 const customizeMenu = (id) => {
 };
+// console.log("items", cart.items);
 </script>
 
 <template>
-  <!-- <a
-    class="btn btn-primary"
-    data-bs-toggle="offcanvas"
-    href="#offcanvasExample"
-    role="button"
-    aria-controls="offcanvasExample"
-  >
-    Link with href
-  </a> -->
-  <!-- <button
-    class="btn btn-primary"
-    type="button"
-    data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasExample"
-    aria-controls="offcanvasExample"
-  >
-    Button with data-bs-target
-  </button> -->
-
+  <CustomizeModal />
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
@@ -80,8 +71,12 @@ const customizeMenu = (id) => {
                   <h5 class="card-title">{{ item.name }}</h5>
                   <p class="card-text">${{ item.price }}</p>
                   <span>Quantity: {{ item.quantity }}</span>
+                  <!-- TODO: Style these better -->
+                  <button @click="decreaseItemQuantity(item.id)">-</button>
+                  <button @click="increaseItemQuantity(item.id)">+</button>
+                  <!-- <span>Custom: {{ item.customizations }}</span> -->
                 </div>
-                <button @click="customizeMenu(item.id)" class="btn btn-success btn-sm me-2">Customize</button>
+                <button @click="customizeMenu(item.id)" data-bs-toggle="modal" data-bs-target="#customize" class="btn btn-success btn-sm me-2">Customize</button>
                 <button @click="removeItem(item.id)" class="btn btn-danger btn-sm">Remove</button>
               </div>
             </div>
@@ -89,21 +84,10 @@ const customizeMenu = (id) => {
         </div>
       <div>Total Price: ${{ cart.totalPrice.toFixed(2) }}</div>
         <!-- TODO: Truncate or round up to only show 2 decimals -->
-        <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="clearCart" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
+        <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="checkOut" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
         <!-- TODO: Display checkout notification  from checked out state -->
       </div>
       <div v-else>Your cart is empty</div>
-
-      <!-- <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div> -->
     </div>
   </div>
 </template>
