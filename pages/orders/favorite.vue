@@ -13,7 +13,7 @@ const addToCart = (meal) => {
     price: meal.price,
     image: meal.image,
     quantity: 1,
-    //customizations: selectedCustomizations.value
+    customizations: meal.customizations
   }
   cart.addItem(item)
 }
@@ -33,6 +33,7 @@ const addToCart = (meal) => {
               <div class="card-body">
                 <h5 class="card-title">{{ item.name }}</h5>
                 <p class="card-text">Price: ${{ item.price }}</p>
+                <button @click="addToCart(meal)" class="btn btn-primary">Add to cart!</button>
               </div>
               </button>
             </div>

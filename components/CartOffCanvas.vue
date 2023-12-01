@@ -39,7 +39,7 @@ const sendEmail = () => {
     });
 };
 
-const clearCart = () => {
+const checkOut = () => {
   order.items = cart.items
   sendEmail(serviceID, templateID, userID);
   cart.removeAllItems();
@@ -84,7 +84,7 @@ const customizeMenu = (id) => {
         </div>
       <div>Total Price: ${{ cart.totalPrice.toFixed(2) }}</div>
         <!-- TODO: Truncate or round up to only show 2 decimals -->
-        <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="clearCart" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
+        <button type="button" class="btn btn-primary" v-if="cart.items.length > 0" @click="checkOut" data-bs-toggle="modal" data-bs-target="#checkedOut">Check Out!</button>
         <!-- TODO: Display checkout notification  from checked out state -->
       </div>
       <div v-else>Your cart is empty</div>
