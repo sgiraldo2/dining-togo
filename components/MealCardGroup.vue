@@ -47,7 +47,6 @@ const isItemInFavorites = (id) => {
       <div class="card h-100 text-decoration-none position-relative">
         <img :src="`/restaurant-food/meal` + meal.image" class="card-img-top" alt="UNL Meal" />
         <div class="card-body">
-          meal.route: {{ meal.route }}
           <h3 class="card-title">{{ meal.name }}</h3>
           <p>{{ meal.price }}</p>
           <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
